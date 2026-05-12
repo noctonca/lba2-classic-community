@@ -2,12 +2,12 @@ add_executable(test_console_state test_console_state.cpp)
 add_executable(test_console_commands test_console_commands.cpp)
 
 target_include_directories(test_console_state PRIVATE
-    ${CMAKE_SOURCE_DIR}/SOURCES
-    ${CMAKE_SOURCE_DIR}/LIB386/H
+    ${CMAKE_SOURCE_DIR}/src/engine
+    ${CMAKE_SOURCE_DIR}/src/lib/include
 )
 target_include_directories(test_console_commands PRIVATE
-    ${CMAKE_SOURCE_DIR}/SOURCES
-    ${CMAKE_SOURCE_DIR}/LIB386/H
+    ${CMAKE_SOURCE_DIR}/src/engine
+    ${CMAKE_SOURCE_DIR}/src/lib/include
 )
 
 target_link_libraries(test_console_state PRIVATE console)

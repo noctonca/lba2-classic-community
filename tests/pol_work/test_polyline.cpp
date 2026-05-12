@@ -4,10 +4,10 @@
  *   Line PROC USES esi edi ebp ebx, x0:DWORD, y0:DWORD, x1:DWORD, y1:DWORD, coul:DWORD
  */
 #include "test_harness.h"
-#include <SVGA/FIL_LINE.H>
-#include <POLYGON/POLY.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <svga/fil_line.h>
+#include <polygon/poly.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

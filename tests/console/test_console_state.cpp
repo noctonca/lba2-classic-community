@@ -2,14 +2,14 @@
  * Host-only tests for console state helpers (no retail game data, no engine init).
  *
  * Intent (must stay aligned with production code):
- * - SOURCES/CONSOLE/CONSOLE_CMD.CPP: console_avail_in_game_scene() delegates to
+ * - src/engine/dev/console/CONSOLE_CMD.CPP: console_avail_in_game_scene() delegates to
  *   Console_AvailInGameScene_FromState — same predicate as whether stateful
  *   commands like give may run.
  * - Console_FormatStatusIslandLine_FromState: first line of the status command
  *   (island, cube, chapter); same string as cmd_status (raw globals, no masking).
  */
 
-#include "CONSOLE/CONSOLE_STATE.H"
+#include "console/console_state.h"
 
 #include <cassert>
 #include <cstdio>

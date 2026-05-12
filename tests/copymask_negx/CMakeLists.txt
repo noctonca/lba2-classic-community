@@ -1,10 +1,10 @@
 add_executable(test_copymask_negx
     test_copymask_negx.cpp
-    ${CMAKE_SOURCE_DIR}/LIB386/SVGA/COPYMASK.CPP
+    ${CMAKE_SOURCE_DIR}/src/render/software/svga/copymask.cpp
 )
 
 target_include_directories(test_copymask_negx PRIVATE
-    ${CMAKE_SOURCE_DIR}/LIB386/H
+    ${CMAKE_SOURCE_DIR}/src/lib/include
 )
 
 set_target_properties(test_copymask_negx PROPERTIES CXX_STANDARD 11)

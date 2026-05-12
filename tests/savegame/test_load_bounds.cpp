@@ -1,13 +1,13 @@
-/* Host-only tests for SOURCES/SAVEGAME_LOAD_BOUNDS.CPP (issue #62 helpers). */
+/* Host-only tests for src/engine/SAVEGAME_LOAD_BOUNDS.CPP (issue #62 helpers). */
 
 #include <cassert>
 #include <cstring>
 #include <vector>
 
-#include <SYSTEM/ADELINE_TYPES.H>
-#include <SYSTEM/LZ.H>
+#include <system/adeline_types.h>
+#include <system/lz.h>
 
-#include "SAVEGAME_LOAD_BOUNDS.H"
+#include "savegame_load_bounds.h"
 
 int main() {
     /* Screen-sized scratch buffer */

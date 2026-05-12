@@ -1,0 +1,7 @@
+set(AIL_SDL_SOURCES cd.cpp common.cpp midi.cpp sample.cpp stream.cpp stb_vorbis.c)
+if(MVIDEO_BACKEND STREQUAL "smacker")
+  list(APPEND AIL_SDL_SOURCES video_audio_sdl.cpp)
+endif()
+target_sources(ail PRIVATE ${AIL_SDL_SOURCES})
+target_compile_definitions(ail PUBLIC USE_SOUND_SDL)
+target_link_libraries(ail PRIVATE SDL3::SDL3)

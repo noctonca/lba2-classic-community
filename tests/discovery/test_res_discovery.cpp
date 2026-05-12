@@ -6,11 +6,11 @@
  * Tests here only assert `lba2.hqr` presence as the discovery gate.
  */
 
-#include <SYSTEM/ADELINE_TYPES.H>
-#include <SYSTEM/FILES.H>
-#include <SYSTEM/LIMITS.H>
+#include <system/adeline_types.h>
+#include <system/files.h>
+#include <system/limits.h>
 
-#include "RES_DISCOVERY.H"
+#include "res_discovery.h"
 
 #include <SDL3/SDL.h>
 

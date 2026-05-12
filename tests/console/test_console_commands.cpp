@@ -1,5 +1,5 @@
-#include "CONSOLE/CONSOLE.H"
-#include "CONSOLE/CONSOLE_STATE.H"
+#include "console/console.h"
+#include "console/console_state.h"
 
 #include <cassert>
 #include <cstring>

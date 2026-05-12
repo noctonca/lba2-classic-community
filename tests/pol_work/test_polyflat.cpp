@@ -11,11 +11,11 @@
  *   Tail-calls Triangle_ReadNextEdge (resolves to CPP version).
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYFLAT.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
-#include <FILLER.H>
+#include <polygon/poly.h>
+#include <polygon/polyflat.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
+#include <filler.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

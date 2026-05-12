@@ -7,10 +7,10 @@
  * Requires: PtrCLUTGouraud (256-entry CLUT used for gouraud lookup).
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYGOUR.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <polygon/polygour.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

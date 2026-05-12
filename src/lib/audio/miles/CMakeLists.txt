@@ -1,0 +1,6 @@
+set(AIL_MILES_SOURCES cd.cpp common.cpp middig.cpp midi.cpp mixer.cpp sample.cpp stream.cpp timer.cpp)
+if(MVIDEO_BACKEND STREQUAL "smacker")
+  list(APPEND AIL_MILES_SOURCES video_audio_miles.cpp)
+endif()
+target_sources(ail PRIVATE ${AIL_MILES_SOURCES})
+target_compile_definitions(ail PUBLIC USE_SOUND_MILES)

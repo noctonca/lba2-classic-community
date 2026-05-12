@@ -11,16 +11,16 @@
  * the filler tail-calls Triangle_ReadNextEdge on every scanline strip.
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYFLAT.H>
-#include <POLYGON/POLYTZF.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <polygon/polyflat.h>
+#include <polygon/polytzf.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 #include <stdint.h>
 #include <fenv.h>
-#include <SYSTEM/UTILS.H>
+#include <system/utils.h>
 
 /* ASM REAL4 constant: FInv_65536 = 0.0000152588 (NOT exact 1/65536).
  * Reference computations must use this approximate value to match

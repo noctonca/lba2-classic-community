@@ -5,7 +5,7 @@
 #   ${CMAKE_BINARY_DIR}/VERSION.txt              — plain text, single line.
 #                                                  Release pipelines (PR #74)
 #                                                  read this to name artifacts.
-#   ${CMAKE_BINARY_DIR}/VERSION_GENERATED.h      — defines LBA2_VERSION_STRING
+#   ${CMAKE_BINARY_DIR}/version_generated.h      — defines LBA2_VERSION_STRING
 #                                                  (included by BUILD_INFO.h).
 #
 # Source of truth is the `VERSION` file at the repo root. See
@@ -22,7 +22,7 @@
 find_package(Git QUIET)
 
 set(_VERSION_TXT "${CMAKE_BINARY_DIR}/VERSION.txt")
-set(_VERSION_HDR "${CMAKE_BINARY_DIR}/VERSION_GENERATED.h")
+set(_VERSION_HDR "${CMAKE_BINARY_DIR}/version_generated.h")
 set(_VERSION_SCRIPT "${CMAKE_SOURCE_DIR}/cmake/write_version.cmake")
 
 # Build-time step: regenerate on every build (cheap; write-on-change inside

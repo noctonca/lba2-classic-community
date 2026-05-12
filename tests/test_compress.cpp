@@ -1,6 +1,6 @@
 #include "test_harness.h"
 
-#include "LZSS.H"
+#include "lzss.h"
 
 #include <string.h>
 

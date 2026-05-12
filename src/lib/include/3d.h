@@ -1,0 +1,31 @@
+#pragma once
+
+#include <system/adeline.h>
+
+// -----------------------------------------------------------------------------
+#include <3d/camera.h>
+#include <3d/copymat.h>
+#include <3d/datamat.h>
+#include <3d/distance.h>
+#include <3d/getang2d.h>
+#include <3d/getang3d.h>
+#include <3d/imatstd.h>
+#include <3d/imattra.h>
+#include <3d/light.h>
+#include <3d/lirot3d.h>
+#include <3d/proj.h>
+#include <3d/lproj.h>
+#include <3d/lrot2d.h>
+#include <3d/lrot3d.h>
+#include <3d/mulmat.h>
+#include <3d/regle3.h>
+#include <3d/rot2d.h>
+#include <3d/rot3d.h>
+#include <3d/rotralis.h>
+#include <3d/rotmat.h>
+#include <3d/rotvect.h>
+#include <3d/sintab.h>
+#include <3d/sintabf.h>
+#include <3d/sqrroot.h>
+#include <3d/tantab.h>
+#include <3d/move.h>

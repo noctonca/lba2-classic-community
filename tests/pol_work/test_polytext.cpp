@@ -4,10 +4,10 @@
  * filler level, comparing ASM and CPP outputs byte-for-byte.
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYTEXT.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <polygon/polytext.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

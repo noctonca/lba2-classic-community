@@ -100,7 +100,7 @@ endif()
 # Engine version string. Reads the canonical value from the VERSION file
 # at the repo root and (optionally) appends -dirty when the working tree
 # has uncommitted changes. Produces both ${CMAKE_BINARY_DIR}/VERSION.txt
-# (plain text, for release pipelines) and ${CMAKE_BINARY_DIR}/VERSION_GENERATED.h
+# (plain text, for release pipelines) and ${CMAKE_BINARY_DIR}/version_generated.h
 # (defines LBA2_VERSION_STRING for the binary).
 include(${CMAKE_SOURCE_DIR}/cmake/git_version.cmake)
 
@@ -116,9 +116,9 @@ set(LBA2_DESKTOP_ID         "lba2cc"                        CACHE STRING "Deskto
 set(LBA2_BUNDLE_IDENTIFIER  "org.lbalab.lba2cc"             CACHE STRING "macOS .app bundle reverse-DNS identifier")
 
 # Build info header (timestamp from compile, flags from configure,
-# version macro from the include of VERSION_GENERATED.h inside BUILD_INFO.h.in).
+# version macro from the include of version_generated.h inside build_info.h.in).
 set(BUILD_FLAGS_STR "SOUND_BACKEND=${SOUND_BACKEND} MVIDEO_BACKEND=${MVIDEO_BACKEND} ENABLE_ASM=${ENABLE_ASM}")
-configure_file(${CMAKE_SOURCE_DIR}/SOURCES/BUILD_INFO.h.in ${CMAKE_BINARY_DIR}/BUILD_INFO.h)
+configure_file(${CMAKE_SOURCE_DIR}/src/engine/build_info.h.in ${CMAKE_BINARY_DIR}/build_info.h)
 
 # Generate the .desktop entry and AppImage env file from the product metadata
 # above. Outputs land in ${CMAKE_BINARY_DIR}/packaging/ — make-appimage.sh
@@ -130,7 +130,7 @@ configure_file(${CMAKE_SOURCE_DIR}/packaging/appimage_env.sh.in
 
 # Windows resource file: drives the .exe icon and Properties → Details
 # (Product Name, File Description, Product Version, ...). Compiled into
-# the binary on Windows builds via SOURCES/CMakeLists.txt; harmlessly
+# the binary on Windows builds via src/engine/CMakeLists.txt; harmlessly
 # generated and ignored on non-Windows.
 #
 # Configure-time substitution: re-run cmake to refresh after VERSION or
@@ -214,8 +214,8 @@ if(APPLE)
 endif()
 
 # Process the targets
-add_subdirectory(LIB386)
-add_subdirectory(SOURCES)
+add_subdirectory(src/lib)
+add_subdirectory(src/engine)
 add_subdirectory(tools)
 
 if(LBA2_BUILD_TESTS)

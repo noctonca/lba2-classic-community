@@ -22,10 +22,10 @@
  * either segfaults outright or scribbles into the guard region.
  */
 
-#include <SVGA/COPYMASK.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
-#include <SYSTEM/ADELINE_TYPES.H>
+#include <svga/copymask.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
+#include <system/adeline_types.h>
 
 #include <stdio.h>
 #include <string.h>

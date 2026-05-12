@@ -7,9 +7,9 @@
  * pointer-sized fields). Walking at the wrong stride mis-reads
  * OffBody/OffAnim and ObjectInitAnim then walks off the heap.
  *
- * See SOURCES/CREDITS_PARSE.{H,CPP}, docs/ABI.md, PR #66, PR #67.
+ * See src/engine/CREDITS_PARSE.{H,CPP}, docs/ABI.md, PR #66, PR #67.
  */
-#include "CREDITS_PARSE.H"
+#include "credits_parse.h"
 
 #include <cstdio>
 #include <cstring>

@@ -1,15 +1,15 @@
 set(_DISC_SOURCES
-    ${CMAKE_SOURCE_DIR}/SOURCES/RES_DISCOVERY.CPP
-    ${CMAKE_SOURCE_DIR}/SOURCES/DIRECTORIES.CPP
-    ${CMAKE_SOURCE_DIR}/SOURCES/EMBEDDED_CFG_WRITE.CPP
-    ${CMAKE_BINARY_DIR}/SOURCES/embedded_lba2_cfg_data.cpp
+    ${CMAKE_SOURCE_DIR}/src/engine/res_discovery.cpp
+    ${CMAKE_SOURCE_DIR}/src/engine/directories.cpp
+    ${CMAKE_SOURCE_DIR}/src/engine/embedded_cfg_write.cpp
+    ${CMAKE_BINARY_DIR}/src/engine/embedded_lba2_cfg_data.cpp
 )
 
 add_executable(test_res_discovery test_res_discovery.cpp ${_DISC_SOURCES})
 
 target_include_directories(test_res_discovery PRIVATE
-    ${CMAKE_SOURCE_DIR}/SOURCES
-    ${CMAKE_SOURCE_DIR}/LIB386/H
+    ${CMAKE_SOURCE_DIR}/src/engine
+    ${CMAKE_SOURCE_DIR}/src/lib/include
     ${CMAKE_BINARY_DIR}
 )
 

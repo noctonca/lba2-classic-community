@@ -9,8 +9,8 @@
  * takes precedence over the library definition.
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLY_JMP.H>
+#include <polygon/poly.h>
+#include <polygon/poly_jmp.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 #include <stdio.h>

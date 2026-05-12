@@ -1,9 +1,9 @@
-# Drift guard: assert build/VERSION.txt and build/VERSION_GENERATED.h are
+# Drift guard: assert build/VERSION.txt and build/version_generated.h are
 # both non-empty AND carry the same payload byte-for-byte.
 #
 # Inputs (passed via -D from the test harness):
 #   VERSION_FILE      — path to ${CMAKE_BINARY_DIR}/VERSION.txt
-#   HEADER_FILE       — path to ${CMAKE_BINARY_DIR}/VERSION_GENERATED.h
+#   HEADER_FILE       — path to ${CMAKE_BINARY_DIR}/version_generated.h
 #
 # Failure modes this catches:
 #   * The CMake script writes one but not the other.

@@ -29,69 +29,69 @@ include(cmake/asm_test_helpers.cmake)
 add_asm_cpp_test(
 	NAME test_grille
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_grille.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/GRILLE_A.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/grille_a.asm
 	RENAME_SYMS DecompColonne Map2Screen GetAdrBlock WorldColBrickFull WorldCodeBrick GetBlockBrick GetWorldColBrickVisible WorldColBrick CodeJeu XMap YMap ZMap XScreen YScreen BufCube BufMap TabBlock BufferBrick
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 	LIBS 3dext 3D ail ani fio obj poly svg sys SDL3::SDL3
 )
-target_sources(test_grille PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/GRILLE.CPP)
+target_sources(test_grille PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/grille.cpp)
 
 add_asm_cpp_test(
 	NAME test_plasma
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_plasma.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/PLASMA.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/plasma.asm
 	RENAME_SYMS Do_Plasma Nb_Pts_Inter Nb_Pts_Control
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 )
-target_sources(test_plasma PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/PLASMA.CPP)
+target_sources(test_plasma PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/plasma.cpp)
 
 add_asm_cpp_test(
 	NAME test_func
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_func.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/FUNC.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/func.asm
 	RENAME_SYMS SearchBoundColRGB
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 )
-target_sources(test_func PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/FUNC.CPP)
+target_sources(test_func PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/func.cpp)
 
 add_asm_cpp_test(
 	NAME test_flow_a
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_flow_a.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/FLOW_A.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/flow_a.asm
 	RENAME_SYMS BoxFlow ShadeBoxBlk CopyBlockShade
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 )
-target_sources(test_flow_a PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/FLOW_A.CPP)
+target_sources(test_flow_a PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/flow_a.cpp)
 
 add_asm_cpp_test(
 	NAME test_fire
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_fire.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/FIRE.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/fire.asm
 	RENAME_SYMS Do_Fire
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 )
-target_sources(test_fire PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/FIRE.CPP)
-target_sources(test_fire PRIVATE ${CMAKE_SOURCE_DIR}/LIB386/SYSTEM/UTILS.CPP)
+target_sources(test_fire PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/fire.cpp)
+target_sources(test_fire PRIVATE ${CMAKE_SOURCE_DIR}/src/lib/system/utils.cpp)
 
 add_asm_cpp_test(
 	NAME test_compress
 	TEST_SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/test_compress.cpp
-	ASM_SOURCE ${CMAKE_SOURCE_DIR}/SOURCES/COMPRESS.ASM
+	ASM_SOURCE ${CMAKE_SOURCE_DIR}/src/engine/compress.asm
 	RENAME_SYMS AddString DeleteString
-	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/SOURCES
+	INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/src/engine
 )
-target_sources(test_compress PRIVATE ${CMAKE_SOURCE_DIR}/SOURCES/LZSS.CPP)
+target_sources(test_compress PRIVATE ${CMAKE_SOURCE_DIR}/src/engine/lzss.cpp)
 
-add_subdirectory(3D)
-add_subdirectory(3DEXT)
-add_subdirectory(SYSTEM)
-add_subdirectory(MENU)
-add_subdirectory(ANIM)
-add_subdirectory(SVGA)
+add_subdirectory(3d)
+add_subdirectory(3dext)
+add_subdirectory(system)
+add_subdirectory(menu)
+add_subdirectory(anim)
+add_subdirectory(svga)
 add_subdirectory(pol_work)
-add_subdirectory(OBJECT)
-add_subdirectory(SNAPSHOT)
+add_subdirectory(object)
+add_subdirectory(snapshot)
 add_subdirectory(fpu_precision)
-add_subdirectory(VIDEO_AUDIO)
+add_subdirectory(video_audio)
 
 endif()

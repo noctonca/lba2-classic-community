@@ -4,7 +4,7 @@
  * list.  Uses C-adapted calling convention in both ASM and CPP.
  */
 #include "test_harness.h"
-#include <POLYGON/CLIPPERZ.H>
+#include <polygon/clipperz.h>
 #include <string.h>
 
 /* Status_Int / Status_Float: FPU control words referenced by POLYCLIP.ASM.

@@ -4,10 +4,10 @@
  * texture mapping and gouraud shading, comparing ASM vs CPP byte-for-byte.
  */
 #include "test_harness.h"
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYTZG.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <polygon/polytzg.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

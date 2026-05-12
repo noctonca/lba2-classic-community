@@ -6,10 +6,10 @@
  */
 #include "test_harness.h"
 #include <fenv.h>
-#include <POLYGON/POLY.H>
-#include <POLYGON/POLYTZF.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <polygon/polytzf.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include "poly_test_fixture.h"
 #include <string.h>
 

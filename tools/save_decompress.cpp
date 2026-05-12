@@ -1,6 +1,6 @@
 /* Standalone LZSS expand for LBA2 save payloads (same as ExpandLZ MinBloc=2). */
-#include <SYSTEM/LZ.H>
-#include <SYSTEM/ADELINE_TYPES.H>
+#include <system/lz.h>
+#include <system/adeline_types.h>
 
 #include <stdio.h>
 #include <stdlib.h>

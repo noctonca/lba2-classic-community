@@ -1,6 +1,6 @@
 #include "test_harness.h"
 
-#include <SYSTEM/ADELINE_TYPES.H>
+#include <system/adeline_types.h>
 
 #include <string.h>
 #include <stdint.h>

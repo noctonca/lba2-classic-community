@@ -6,7 +6,7 @@
 # Inputs (passed via -D from the caller):
 #   SOURCE_DIR        — repo root (where VERSION lives and .git may live)
 #   OUT_TXT           — path to write plain-text version (build/VERSION.txt)
-#   OUT_HDR           — path to write generated header (build/VERSION_GENERATED.h)
+#   OUT_HDR           — path to write generated header (build/version_generated.h)
 #   GIT_EXECUTABLE    — full path to `git`, or empty if not found
 #
 # Source of truth: the `VERSION` file at the repo root (Plan C — checked-in

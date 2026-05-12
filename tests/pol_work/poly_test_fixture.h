@@ -6,9 +6,9 @@
 #ifndef POLY_TEST_FIXTURE_H
 #define POLY_TEST_FIXTURE_H
 
-#include <POLYGON/POLY.H>
-#include <SVGA/SCREEN.H>
-#include <SVGA/CLIP.H>
+#include <polygon/poly.h>
+#include <svga/screen.h>
+#include <svga/clip.h>
 #include <string.h>
 
 #define TEST_POLY_W 160

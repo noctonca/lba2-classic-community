@@ -8,8 +8,8 @@
  * C-adapted calling convention (PROC uses ... input: DWORD).
  */
 #include "test_harness.h"
-#include <POLYGON/TESTVUE.H>
-#include <POLYGON/POLY.H>
+#include <polygon/testvue.h>
+#include <polygon/poly.h>
 #include <string.h>
 
 /* ASM-side: TestVuePolyF is the actual function.

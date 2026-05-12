@@ -1,6 +1,6 @@
 #include "test_harness.h"
 
-#include <FUNC.H>
+#include <func.h>
 
 #include <string.h>
 

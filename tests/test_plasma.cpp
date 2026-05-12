@@ -1,6 +1,6 @@
 #include "test_harness.h"
 
-#include <PLASMA.H>
+#include <plasma.h>
 
 #include <string.h>
 

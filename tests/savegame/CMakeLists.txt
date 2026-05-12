@@ -1,9 +1,9 @@
 add_executable(test_savegame_load_bounds test_load_bounds.cpp
-    ${CMAKE_SOURCE_DIR}/SOURCES/SAVEGAME_LOAD_BOUNDS.CPP)
+    ${CMAKE_SOURCE_DIR}/src/engine/savegame_load_bounds.cpp)
 
 target_include_directories(test_savegame_load_bounds PRIVATE
-    ${CMAKE_SOURCE_DIR}/SOURCES
-    ${CMAKE_SOURCE_DIR}/LIB386/H
+    ${CMAKE_SOURCE_DIR}/src/engine
+    ${CMAKE_SOURCE_DIR}/src/lib/include
 )
 
 set_target_properties(test_savegame_load_bounds PROPERTIES CXX_STANDARD 11)

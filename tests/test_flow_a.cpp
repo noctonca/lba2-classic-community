@@ -1,10 +1,10 @@
 #include "test_harness.h"
 
-#include "FLOW.H"
+#include "flow.h"
 
-#include <POLYGON/POLY.H>
-#include <SVGA/CLIP.H>
-#include <SVGA/SCREEN.H>
+#include <polygon/poly.h>
+#include <svga/clip.h>
+#include <svga/screen.h>
 
 #include <string.h>
 

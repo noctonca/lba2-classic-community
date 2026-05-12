@@ -1,8 +1,8 @@
 #include "test_harness.h"
 
-#include "FIRE.H"
+#include "fire.h"
 
-#include <SYSTEM/ADELINE_TYPES.H>
+#include <system/adeline_types.h>
 
 #include <string.h>
 

@@ -41,7 +41,7 @@ function(add_asm_cpp_test)
     # ── CPP-only test (always built) ──────────────────────────────────────
     add_executable(${ARG_NAME} ${ARG_TEST_SOURCE})
     target_include_directories(${ARG_NAME} PRIVATE
-        ${CMAKE_SOURCE_DIR}/LIB386/H
+        ${CMAKE_SOURCE_DIR}/src/lib/include
         ${CMAKE_SOURCE_DIR}/tests
         ${ARG_INCLUDE_DIRS}
     )
@@ -107,8 +107,8 @@ function(add_asm_cpp_test)
         foreach(_dir ${ARG_ASM_INCLUDE_DIRS})
             list(APPEND _uasm_includes "-I${_dir}")
         endforeach()
-        # Always include LIB386/H and the original ASM source directory
-        list(APPEND _uasm_includes "-I${CMAKE_SOURCE_DIR}/LIB386/H")
+        # Always include src/lib/include and the original ASM source directory
+        list(APPEND _uasm_includes "-I${CMAKE_SOURCE_DIR}/src/lib/include")
         list(APPEND _uasm_includes "-I${_asm_dir}")
 
         # Split CMAKE_ASM_MASM_FLAGS (a space-separated string) into a proper list
@@ -205,7 +205,7 @@ function(add_asm_cpp_test)
                 VERBATIM
             )
 
-            set(_dep_uasm_includes "-I${CMAKE_SOURCE_DIR}/LIB386/H" "-I${_dep_dir}")
+            set(_dep_uasm_includes "-I${CMAKE_SOURCE_DIR}/src/lib/include" "-I${_dep_dir}")
             add_custom_command(
                 OUTPUT ${_dep_obj}
                 COMMAND ${CMAKE_ASM_MASM_COMPILER}
